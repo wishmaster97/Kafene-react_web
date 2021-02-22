@@ -31,11 +31,11 @@ function Login(props) {
         })*/
 
         const data = {
-            username: 'abhi',
-            password: 'abhi'
+            username: {username},
+            password: {password}
         }
 
-        if(data.password ==='abhi' && data.username==='abhi') {
+        if(data.password === data.username) {
             setAuth(true);
             alert('Login Successful');
             props.history.push('/'); 
